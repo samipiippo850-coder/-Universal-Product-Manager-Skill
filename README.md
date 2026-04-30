@@ -98,20 +98,7 @@ Universal Product Manager Skill
 
 ---
 
-## 4. 推荐仓库结构
-
-```text
--skills/
-├── README.md
-├── UNIVERSAL_PRODUCT_MANAGER_SKILL.md
-├── pm_skill_toolkit.py
-├── product_brief_template.json
-└── LICENSE
-```
-
----
-
-## 5. 文件说明
+## 4. 文件说明
 
 | 文件 | 说明 |
 |---|---|
@@ -123,7 +110,7 @@ Universal Product Manager Skill
 
 ---
 
-## 6. 自动化脚本
+## 5. 自动化脚本
 
 脚本名称：
 
@@ -139,19 +126,19 @@ Python 3.8+
 
 该脚本不依赖第三方库。
 
-### 6.1 初始化产品项目目录
+### 5.1 初始化产品项目目录
 
 ```bash
 python pm_skill_toolkit.py init --name my-product
 ```
 
-### 6.2 校验产品信息模板
+### 5.2 校验产品信息模板
 
 ```bash
 python pm_skill_toolkit.py validate-brief --input product_brief_template.json
 ```
 
-### 6.3 生成产品拆解图
+### 5.3 生成产品拆解图
 
 ```bash
 python pm_skill_toolkit.py breakdown --input product_brief_template.json --output product-breakdown-map.md --type tree
@@ -165,43 +152,43 @@ mindmap
 mermaid
 ```
 
-### 6.4 生成测试用例
+### 5.4 生成测试用例
 
 ```bash
 python pm_skill_toolkit.py testcase --input product_brief_template.json --output test-cases.md
 ```
 
-### 6.5 生成发布检查清单
+### 5.5 生成发布检查清单
 
 ```bash
 python pm_skill_toolkit.py release-checklist --input product_brief_template.json --output release-checklist.md
 ```
 
-### 6.6 生成新手引导文档
+### 5.6 生成新手引导文档
 
 ```bash
 python pm_skill_toolkit.py beginner-guide --output beginner-guide.md
 ```
 
-### 6.7 生成产品经理术语表
+### 5.7 生成产品经理术语表
 
 ```bash
 python pm_skill_toolkit.py glossary --output pm-glossary.md
 ```
 
-### 6.8 生成 RACI 责任矩阵
+### 5.8 生成 RACI 责任矩阵
 
 ```bash
 python pm_skill_toolkit.py raci --input product_brief_template.json --output raci-matrix.md
 ```
 
-### 6.9 生成大厂 SOP 检查清单
+### 5.9 生成大厂 SOP 检查清单
 
 ```bash
 python pm_skill_toolkit.py sop-checklist --input product_brief_template.json --output sop-checklist.md
 ```
 
-### 6.10 生成指标口径表
+### 5.10 生成指标口径表
 
 指标口径表包含：指标名称、业务定义、计算公式、数据来源、更新频率、负责人、适用范围、异常处理和看板位置。
 
@@ -210,13 +197,13 @@ python pm_skill_toolkit.py metric-dictionary --input product_brief_template.json
 ```
 
 
-### 6.11 生成阶段准入 / 准出标准表
+### 5.11 生成阶段准入 / 准出标准表
 
 ```bash
 python pm_skill_toolkit.py phase-gates --input product_brief_template.json --output phase-gates.md
 ```
 
-### 6.12 追加项目日志
+### 5.12 追加项目日志
 
 ```bash
 python pm_skill_toolkit.py log --project my-product --type decision --message "确认 MVP 范围"
@@ -233,7 +220,7 @@ learning
 
 ---
 
-## 7. 产品信息模板
+## 6. 产品信息模板
 
 模板文件：
 
@@ -277,7 +264,7 @@ v2.0 主要字段：
 
 ---
 
-## 8. 推荐使用流程
+## 7. 推荐使用流程
 
 ```text
 1. 用自然语言描述产品想法
@@ -291,7 +278,7 @@ v2.0 主要字段：
 
 ---
 
-## 9. 示例需求
+## 8. 示例需求
 
 ```text
 我想做一个面向大学生的 AI 学习助手，帮我设计产品方案。
@@ -307,7 +294,7 @@ v2.0 主要字段：
 
 ---
 
-## 10. 项目目标
+## 9. 项目目标
 
 本项目希望帮助没有产品经理经验的人，从 0 开始掌握：
 
